@@ -212,14 +212,14 @@ with col_map:
                 st.subheader("🟢 Points inside drawn polygon")
                 st.markdown(f"- 👨 **M**: {m_poly}  \n- 👩 **F**: {f_poly}  \n- 👥 **Total**: {m_poly+f_poly}")
 
-                fig_poly, ax_poly = plt.subplots(figsize=(3,3))
-                ax_poly.pie([m_poly,f_poly], labels=["M","F"], autopct="%1.1f%%", startangle=90)
-                ax_poly.axis("equal")
-                st.pyplot(fig_poly)
-            else:
-                st.info("No points inside drawn polygon.")
+#                 fig_poly, ax_poly = plt.subplots(figsize=(3,3))
+#                 ax_poly.pie([m_poly,f_poly], labels=["M","F"], autopct="%1.1f%%", startangle=90)
+#                 ax_poly.axis("equal")
+#                 st.pyplot(fig_poly)
+#             else:
+#                 st.info("No points inside drawn polygon.")
 
-with col_chart:
+# with col_chart:
     # Existing SE charts remain unchanged
     if idse_selected=="No filter":
         st.info("Select SE.")
@@ -264,5 +264,6 @@ with col_chart:
 st.markdown("""
 ---
 **Geospatial Enterprise Web Mapping** Developed with Streamlit, Folium & GeoPandas  
-** MOC CAMARA, PhD – Geomatics Engineering** © 2025
+** Dr. Mahamadou CAMARA, PhD – Geomatics Engineering** © 2025
 """)
+
